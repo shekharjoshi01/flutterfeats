@@ -5,8 +5,7 @@ import 'package:flutter/material.dart';
 class TabBarHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: DefaultTabController(
+    return  DefaultTabController(
         length: 3, // Specify the number of tabs
         child: Scaffold(
           appBar: AppBar(
@@ -32,7 +31,7 @@ class TabBarHomePage extends StatelessWidget {
             ],
           ),
         ),
-      ),
+      
     );
   }
 }
