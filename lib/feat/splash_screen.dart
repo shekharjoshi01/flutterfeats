@@ -11,13 +11,13 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: AnimatedSplashScreen(
         splash: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(child: LottieBuilder.asset("assets/lottie/learn.json"))
           ],
         ),
         nextScreen: HomePage(),
-        splashIconSize: 60,
+        splashIconSize: 500,
         backgroundColor: Colors.green.shade200,
       ),
     );
