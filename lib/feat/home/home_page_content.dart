@@ -1,6 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/feat/about_us/about_us.dart';
+import 'package:flutter_learn/feat/contact_us/contact_us.dart';
 import 'package:lottie/lottie.dart';
 
 
@@ -29,7 +30,9 @@ class HomePageContent extends StatelessWidget {
           ),
 
       SizedBox(height: 20,),
-      AboutUs()
+      AboutUs(),
+          SizedBox(height: 20,),
+          ContactUs()
         ],
       ),
     );
