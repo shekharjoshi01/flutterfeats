@@ -13,7 +13,7 @@ class ContactUs extends StatelessWidget {
           child: Text("Contact Us",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
         ),
         SizedBox(height: 10,),
-        Lottie.asset('assets/lottie/contact.json'),
+        Lottie.asset('assets/lottie/contact_us.json'),
         SizedBox(height: 10,),
         Text('If you have any queries about us, You can contact us:',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16)),
         Row(
