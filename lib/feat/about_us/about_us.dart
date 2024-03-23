@@ -7,6 +7,7 @@ class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
 
         Padding(
@@ -15,13 +16,26 @@ class AboutUs extends StatelessWidget {
         ),
         SizedBox(height: 10,),
         Lottie.asset('assets/lottie/home_page_animation.json'),
-Padding(
-  padding: const EdgeInsets.all(8.0),
-  child: Text('At Flutter Feats, we are passionate about empowering aspiring and seasoned developers alike to delve into the world of Flutter and harness its potential to build beautiful, high-performance applications. Whether you are a beginner eager to kickstart your journey or a seasoned pro looking to refine your skills, Flutter Feats is here to support you every step of the way.',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16)),
-),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text('At Flutter Feats, we are passionate about empowering aspiring and seasoned developers alike to delve into the world of Flutter and harness its potential to build beautiful, high-performance applications. Whether you are a beginner eager to kickstart your journey or a seasoned pro looking to refine your skills, Flutter Feats is here to support you every step of the way.',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16)),
+        ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text('Our mission is simple: to provide comprehensive resources, and insights to help you navigate the complexities of Flutter development with ease. From basic concepts to advanced techniques, we cover it all, ensuring that you have the knowledge and tools necessary to bring your ideas to life.',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16)),
+        ),
+        Text('If you have any queries about us, You can contact us:',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16)),
+        Row(
+          children: [
+            Text('Email:',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16,color: Colors.blue)),
+            Text('info@gib.com.np , contact@gib.com.np',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16))
+          ],
+        ),
+        Row(
+          children: [
+            Text('Phone Number: ',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16,color: Colors.blue)),
+            Text('9861151077 ,9868710362',textAlign: TextAlign.justify,style:TextStyle(fontSize: 16))
+          ],
         ),
       ],
     );
