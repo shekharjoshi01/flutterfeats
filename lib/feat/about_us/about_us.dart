@@ -14,7 +14,7 @@ class AboutUs extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: Text("About Us",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
         ),
-        SizedBox(height: 10,),
+        SizedBox(height: 10),
         Lottie.asset('assets/lottie/home_page_animation.json'),
         Padding(
           padding: const EdgeInsets.all(8.0),
