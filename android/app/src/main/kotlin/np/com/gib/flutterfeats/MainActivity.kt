@@ -1,4 +1,4 @@
-package com.example.flutter_learn
+package np.com.gib.flutterfeats
 
 import io.flutter.embedding.android.FlutterActivity
 
