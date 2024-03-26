@@ -1,7 +1,5 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/feature/home/home_page.dart';
+import 'package:flutter_learn/feat/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
     );
   }
 }
