@@ -1,9 +1,7 @@
-import 'dart:async';
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/feat/home/home_page.dart';
-import 'package:flutter_learn/main.dart';
 import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,10 +15,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => MyApp()));
-    });
+    // Timer(Duration(seconds: 5), () {
+    //   Navigator.pushReplacement(
+    //       context, MaterialPageRoute(builder: (context) => MyApp()));
+    // });
   }
 
   @override
