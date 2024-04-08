@@ -29,10 +29,10 @@ class HomePageContent extends StatelessWidget {
             child: Text("Delve into the world of Flutter with our dedicated learning app. Whether you're a beginner or seasoned developer, our platform offers comprehensive resources to elevate your skills. Join us on this exciting journey to master Flutter development and build remarkable applications. Let's get started!",style:TextStyle(fontSize: 16) ,textAlign: TextAlign.justify,),
           ),
 
-      SizedBox(height: 20,),
-      AboutUs(),
           SizedBox(height: 20,),
-          ContactUs()
+          AboutUs(),
+              SizedBox(height: 20,),
+              // ContactUs()
         ],
       ),
     );
