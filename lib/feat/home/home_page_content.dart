@@ -16,7 +16,8 @@ class HomePageContent extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Lottie.asset('assets/lottie/home_page.json'),
+          // Lottie.asset('assets/lottie/home_page.json'),
+          Lottie.asset('assets/lottie/home_page_animation.json'),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Text("Welcome to Flutter Feats",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
