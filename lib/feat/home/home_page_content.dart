@@ -6,7 +6,10 @@ import 'package:lottie/lottie.dart';
 
 
 class HomePageContent extends StatelessWidget {
-  const HomePageContent({super.key});
+  HomePageContent({super.key});
+
+  String msgFlutter = "Delve into the world of Flutter with our dedicated learning app. Whether you're a beginner or seasoned developer, our platform offers comprehensive resources to elevate your skills. Join us on this exciting journey to master Flutter development and build remarkable applications. Let's get started!";
+  String msgTwo = "Join a vibrant community, stay updated with the latest Flutter news, and unleash your app-building potential today!";
 
   @override
   Widget build(BuildContext context) {
@@ -18,20 +21,20 @@ class HomePageContent extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Text("Welcome to Flutter Feats",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
           ),
-          SizedBox(height: 5,),
+          SizedBox(height: 8,),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text("Master Flutter development with our practical examples, and interactive quizzes. Join a vibrant community, stay updated with the latest Flutter news, and unleash your app-building potential today!",style:TextStyle(fontSize: 16) ,textAlign: TextAlign.justify,),
+            child: Text("Master Flutter development with our practical examples, and interactive quizzes. Which will be comming very soon!!!",style:TextStyle(fontSize: 16) ,textAlign: TextAlign.justify,),
           ),
-          SizedBox(height: 5),
+          SizedBox(height: 8),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text("Delve into the world of Flutter with our dedicated learning app. Whether you're a beginner or seasoned developer, our platform offers comprehensive resources to elevate your skills. Join us on this exciting journey to master Flutter development and build remarkable applications. Let's get started!",style:TextStyle(fontSize: 16) ,textAlign: TextAlign.justify,),
+            child: Text("We will be uploading more tutorials on flutter here",style:TextStyle(fontSize: 16) ,textAlign: TextAlign.justify,),
           ),
 
+          SizedBox(height: 24,),
+          // AboutUs(),
           SizedBox(height: 20,),
-          AboutUs(),
-              SizedBox(height: 20,),
               // ContactUs()
         ],
       ),
