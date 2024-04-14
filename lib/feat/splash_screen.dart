@@ -1,6 +1,7 @@
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/core/app_assets.dart';
 import 'package:flutter_learn/feat/home/home_page.dart';
 import 'package:lottie/lottie.dart';
 
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
         splash: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(child: LottieBuilder.asset("assets/lottie/learn.json"))
+            Center(child: LottieBuilder.asset(AppAssets.splashImage))
           ],
         ),
         nextScreen: HomePage(),
