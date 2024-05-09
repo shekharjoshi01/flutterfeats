@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ],
           ),
         ),
-        nextScreen: MainList(),
+        nextScreen: HomePage(),
         splashIconSize: 500,
         backgroundColor: Colors.green.shade200,
       ),
