@@ -27,11 +27,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
 
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.secondary  ,
         title: Text(
           "Flutter Feats",
           style: TextStyle(
             fontSize: 24,
+            color: AppColors.white,
             fontWeight: FontWeight.bold,
             fontFamily: AutofillHints.countryName,
           ),
@@ -59,8 +60,8 @@ onTap: (index){
 
    showUnselectedLabels: false,
    currentIndex: _myIndex,
-   unselectedItemColor: AppColors.primaryBlue,
-   selectedItemColor: AppColors.secondary,
+   unselectedItemColor: AppColors.secondary,
+   selectedItemColor: AppColors.primaryBlue,
    items: [
      BottomNavigationBarItem(icon: Icon(Icons.home_filled),label:"Home" ),
      BottomNavigationBarItem(icon: Icon(Icons.library_books),label:"Learn" ),
