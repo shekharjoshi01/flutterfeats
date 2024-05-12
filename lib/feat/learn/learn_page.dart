@@ -21,12 +21,28 @@ class LearnPage extends StatefulWidget {
 class _LearnPageState extends State<LearnPage> {
   @override
   Widget build(BuildContext context) {
-var topicList = [ 'Scaffold','Center','SizedBox','Container','Row', 'Column','Drawer','ListView',];
+var topicList = [ 'Scaffold','Drawer','ListView',];
 
 return ListView.builder(
   itemCount: topicList.length, // Define itemCount here
   itemBuilder: (context, index) {
     return InkWell(
+      onTap: () {
+        if (index == 0) {
+          Navigator.push(context, MaterialPageRoute(
+            builder: (context) => ScaffoldPage(), // Navigate to ScaffoldPage
+          ),);
+        }else if (index == 1) {
+          Navigator.push(context, MaterialPageRoute(
+            builder: (context) => DrawerPage(), // Navigate to ScaffoldPage
+          ),);
+        }
+        else{
+          Navigator.push(context,MaterialPageRoute(
+            builder: (context) => ListViewPage(), // Navigate to ScaffoldPage
+          ),);
+        }
+      },
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Card(
@@ -42,47 +58,6 @@ return ListView.builder(
           ),
         ),
       ),
-      onTap: () {
-        if (index == 0) {
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => ScaffoldPage(), // Navigate to ScaffoldPage
-          ),);
-        } else if (index == 1) {
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => CenterPage(), // Navigate to ScaffoldPage
-          ),);
-        }
-        else if (index == 2) {
-          Navigator.push(context,MaterialPageRoute(
-            builder: (context) => SizedBoxPage(), // Navigate to ScaffoldPage
-          ),);
-        }
-        else if (index == 3) {
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => ContainerPage(), // Navigate to ScaffoldPage
-          ),);
-        }
-        else if (index == 4) {
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => RowPage(), // Navigate to ScaffoldPage
-          ),);
-        }
-        else if (index == 5) {
-          Navigator.push(context,MaterialPageRoute(
-            builder: (context) => ColumnPage(), // Navigate to ScaffoldPage
-          ),);
-        }else if (index == 6) {
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => DrawerPage(), // Navigate to ScaffoldPage
-          ),);
-        }
-
-        else{
-          Navigator.push(context,MaterialPageRoute(
-            builder: (context) => ListViewPage(), // Navigate to ScaffoldPage
-          ),);
-        }
-      },
     );
   },
   itemExtent: 100,

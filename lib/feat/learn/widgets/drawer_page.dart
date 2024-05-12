@@ -1,10 +1,18 @@
+
 import 'package:flutter/material.dart';
 
 class DrawerPage extends StatelessWidget {
-  const  DrawerPage({super.key});
+  const DrawerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("Drawer Page"),);
+    return Scaffold(
+      appBar: AppBar(title: Text("Drawer"),),
+      body: ListView(
+        children: [
+          Text("Drawer Page")
+        ],
+      ),
+    );
   }
 }

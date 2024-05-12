@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/feat/splash_screen.dart';
+import 'package:flutter_learn/feat/auth/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
