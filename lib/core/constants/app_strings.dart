@@ -1,5 +1,5 @@
 class AppStrings  {
-  static String widget = "Widget";
+  static String widgets = "Widgets";
   static String contactUs = "Contact Us";
   static String aboutUs = "About Us";
   static String email = "Email";

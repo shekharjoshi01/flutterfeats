@@ -60,10 +60,10 @@ class _DashboardState extends State<Dashboard> {
         items: [
          // BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.library_books), label: "Learn"),
-          BottomNavigationBarItem(icon: Icon(Icons.phone), label: "Contact Us"),
+              icon: Icon(Icons.library_books), label: AppStrings.widgets),
+          BottomNavigationBarItem(icon: Icon(Icons.phone), label: AppStrings.contactUs),
           BottomNavigationBarItem(
-              icon: Icon(Icons.people_alt_outlined), label: "About Us"),
+              icon: Icon(Icons.people_alt_outlined), label: AppStrings.aboutUs),
         ],
       ),
     );
