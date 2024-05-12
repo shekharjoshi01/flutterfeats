@@ -42,6 +42,9 @@ return ListView.builder(
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Card(
+          elevation: 4,
+          color: AppColors.white,
+          surfaceTintColor: AppColors.primaryBlue,
           child: Center(
             child: Text(
               topicList[index],

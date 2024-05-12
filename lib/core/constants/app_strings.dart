@@ -3,10 +3,10 @@ class AppStrings  {
   static String contactUs = "Contact Us";
   static String aboutUs = "About Us";
   static String email = "Email";
-  static String companyEmailOne = "info@gib.com.np,";
+  static String companyEmailOne = "gibmnr@gmail.com";
   static String companyEmailTwo = "contact@gib.com.np";
   static String phoneNumber = "Phone Number";
-  static String companyPhoneNumber = "9861151077,    9868710362";
+  static String companyPhoneNumber = "9861151077";
   static String flutterFeats = "Flutter Feats";
 
 

@@ -29,7 +29,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.secondary,
+        backgroundColor: AppColors.primaryBlue,
         title: Text(
           AppStrings.flutterFeats,
           style: TextStyle(
@@ -41,7 +41,7 @@ class _DashboardState extends State<Dashboard> {
         ),
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Image.asset("assets/logo.png"),
+          child: Image.asset("assets/logo.png", color: AppColors.white,),
         ),
       ),
       body: Center(
@@ -53,17 +53,14 @@ class _DashboardState extends State<Dashboard> {
             _myIndex = index;
           });
         },
-        showUnselectedLabels: false,
         currentIndex: _myIndex,
         unselectedItemColor: AppColors.secondary,
         selectedItemColor: AppColors.primaryBlue,
+
         items: [
-         // BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.library_books), label: AppStrings.widgets),
+          BottomNavigationBarItem(icon: Icon(Icons.library_books), label: AppStrings.widgets),
           BottomNavigationBarItem(icon: Icon(Icons.phone), label: AppStrings.contactUs),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.people_alt_outlined), label: AppStrings.aboutUs),
+          BottomNavigationBarItem(icon: Icon(Icons.people_alt_outlined), label: AppStrings.aboutUs),
         ],
       ),
     );
