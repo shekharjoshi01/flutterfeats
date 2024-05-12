@@ -71,7 +71,9 @@ flutter:
     - assets/logo.png
     - assets/lottie/home_page.json
     - assets/lottie/home_page_animation.json
-    - assets/lottie/contact.json
+    - assets/contact.png
+    - assets/
+#    - assets/lottie/contact.json
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

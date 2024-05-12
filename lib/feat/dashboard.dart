@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learn/feat/about_us/about_us.dart';
 import 'package:flutter_learn/feat/contact_us/contact_us.dart';
 
-import 'package:flutter_learn/feat/home/home_page_content.dart';
-import 'package:flutter_learn/feat/learn/learn_page.dart';
+import 'package:flutter_learn/feat/home/home_page.dart';
+
+import 'package:flutter_learn/feat/widget/widget_page.dart';
 
 import '../core/constants/app_colors.dart';
+import '../core/constants/app_strings.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -17,8 +19,8 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   int _myIndex = 0;
   List<Widget> widgetList = [
-    HomePage(),
-    LearnPage(),
+   // HomePage(),
+    WidgetPage(),
     ContactUs(),
     AboutUs(),
   ];
@@ -29,7 +31,7 @@ class _DashboardState extends State<Dashboard> {
       appBar: AppBar(
         backgroundColor: AppColors.secondary,
         title: Text(
-          "Flutter Feats",
+          AppStrings.flutterFeats,
           style: TextStyle(
             fontSize: 24,
             color: AppColors.white,
@@ -56,7 +58,7 @@ class _DashboardState extends State<Dashboard> {
         unselectedItemColor: AppColors.secondary,
         selectedItemColor: AppColors.primaryBlue,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+         // BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(Icons.library_books), label: "Learn"),
           BottomNavigationBarItem(icon: Icon(Icons.phone), label: "Contact Us"),

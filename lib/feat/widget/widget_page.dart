@@ -1,24 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/feat/learn/widgets/center_page.dart';
-import 'package:flutter_learn/feat/learn/widgets/column_page.dart';
-import 'package:flutter_learn/feat/learn/widgets/container_page.dart';
-import 'package:flutter_learn/feat/learn/widgets/drawer_page.dart';
-import 'package:flutter_learn/feat/learn/widgets/listview_page.dart';
-import 'package:flutter_learn/feat/learn/widgets/row_page.dart';
-import 'package:flutter_learn/feat/learn/widgets/scaffold_page.dart';
-import 'package:flutter_learn/feat/learn/widgets/sized_box_page.dart';
+import 'package:flutter_learn/feat/widget/widgets/drawer_page.dart';
+import 'package:flutter_learn/feat/widget/widgets/listview_page.dart';
+import 'package:flutter_learn/feat/widget/widgets/scaffold_page.dart';
+
 
 import '../../core/constants/app_colors.dart';
 
-class LearnPage extends StatefulWidget {
-  const LearnPage({super.key});
+class WidgetPage extends StatefulWidget {
+  const WidgetPage({super.key});
 
   @override
-  State<LearnPage> createState() => _LearnPageState();
+  State<WidgetPage> createState() => _LearnPageState();
 }
 
-class _LearnPageState extends State<LearnPage> {
+class _LearnPageState extends State<WidgetPage> {
   @override
   Widget build(BuildContext context) {
 var topicList = [ 'Scaffold','Drawer','ListView',];

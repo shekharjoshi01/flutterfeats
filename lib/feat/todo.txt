@@ -1,7 +1,7 @@
 
-1. Change Learn to Widgets
-2. Contact Page update UI
-3. Cross check the content of About Us
-4. Update the content of Scaffold
-5. Have content upto 3 widgets
+1. Change Learn to Widgets -> Done
+2. Contact Page update UI -> Done
+3. Cross check the content of About Us -> Done
+4. Update the content of Scaffold -> Done
+5. Have content upto 3 widgets -> Done
 
